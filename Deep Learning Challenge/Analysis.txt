@@ -1,0 +1,26 @@
+****** Report *******
+
+Results Neural Network Model:
+What variable(s) are the target(s) for your model?
+    *The target variable is "IS_SUCCESSFUL", which tells us if the application was funded or not.
+
+What variable(s) are the features for your model?
+    *"APPLICATION TYPE", "CLASSIFICATION", "USE CASE", "ASK AMT", "ORGANIZATION", "INCOME AMT", "STATUS", "SPECIAL CONSIDERATIONS"
+
+What variable(s) should be removed from the input data because they are neither targets nor features? 
+    * The "EIN" and "NAME" were dropped
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+    *Neurons- 128, 64, 32, 1 
+    *Activation Functions- ReLU, Sigmoid
+    *Oprimizer- Adam
+    *Loss Function- Binary Crossentropy
+
+Were you able to achieve the target model performance?
+    *Our best model reached 73% acurracy. No it did not meet the target.
+    
+What steps did you take in your attempts to increase model performance?
+    *increase hidden layers and neurons, impemented dropout layers, tuned functions and used Standardscaler.
+
+Purpose:
+**The purpose of this analysis is to build and optimize a neural network model that can predict if AlphabetSoupCharity application funding will be successful or not.
